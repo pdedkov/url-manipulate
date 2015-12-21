@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      "url-manipulate",
+      "/Users/pavel/www/linker"
+    ],
+    [
+      "url-manipulate@^1.0.1",
+      "/Users/pavel/www/linker"
+    ]
+  ],
+  "_from": "url-manipulate@>=1.0.1 <2.0.0",
+  "_id": "url-manipulate@1.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/url-manipulate",
+  "_nodeVersion": "5.1.1",
+  "_npmUser": {
+    "email": "pavel.dedkov@gmail.com",
+    "name": "pdedkov"
+  },
+  "_npmVersion": "3.3.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "url-manipulate",
+    "raw": "url-manipulate@^1.0.1",
+    "rawSpec": "^1.0.1",
+    "scope": null,
+    "spec": ">=1.0.1 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_shrinkwrap": null,
+  "_spec": "url-manipulate@^1.0.1",
+  "_where": "/Users/pavel/www/linker",
+  "author": {
+    "email": "pavel.dedkov@gmail.com",
+    "name": "Pavel E. Dedkov",
+    "url": "http://dedkov.ru"
+  },
+  "dependencies": {
+    "assert": "^1.3.0",
+    "babel-runtime": "^6.3.19",
+    "punycode": "^1.3.2",
+    "url": "^0.11.0",
+    "urlencode": "^1.1.0",
+    "validator": "^4.4.0"
+  },
+  "description": "simple url manipulation library",
+  "devDependencies": {
+    "babel": "^6.3.13",
+    "chai": "^3.4.1",
+    "istanbul-harmony": "^0.3.16",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "db6bf763681b029d0f2a34ae44e24bf0bccbd95e",
+    "tarball": "http://registry.npmjs.org/url-manipulate/-/url-manipulate-1.0.1.tgz"
+  },
+  "license": "ISC",
+  "main": "lib/index.es6.js",
+  "maintainers": [
+    {
+      "name": "pdedkov",
+      "email": "pavel.dedkov@gmail.com"
+    }
+  ],
+  "name": "url-manipulate",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "compile": "babel --experimental --optional runtime -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "mocha --require test/babelhook --reporter spec --compilers es6.js:babel/register",
+	"test-travis": "node --harmony istanbul cover _mocha --report lcovonly --hook-run-in-context -- --require test/babelhook --compilers es6.js:babel/register --reporter dot"
+  },
+  "version": "1.0.1"
+}
