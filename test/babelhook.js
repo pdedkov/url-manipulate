@@ -1,3 +1,3 @@
 require("babel/register")({
-	experimental: true
+	lexperimental: true
 });
