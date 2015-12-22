@@ -80,7 +80,6 @@
   },
   "name": "url-manipulate",
   "optionalDependencies": {},
-  "readme": "README.md",
   "scripts": {
     "compile": "babel --experimental --optional runtime -d lib/ src/",
     "prepublish": "npm run compile",
