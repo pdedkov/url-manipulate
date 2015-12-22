@@ -86,5 +86,5 @@
     "prepublish": "npm run compile",
     "test": "mocha --require test/babelhook --reporter spec --compilers es6.js:babel-register"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
