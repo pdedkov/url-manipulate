@@ -51,8 +51,10 @@
   "description": "simple url manipulation library",
   "devDependencies": {
     "babel": "^6.3.13",
+    "babel-core": "^6.3.21",
     "babel-register": "^6.3.13",
     "chai": "^3.4.1",
+    "istanbul": "^0.4.1",
     "istanbul-harmony": "^0.3.16",
     "mocha": "^2.3.4",
     "sinon": "^1.17.2",
@@ -77,8 +79,7 @@
   "scripts": {
     "compile": "babel --experimental --optional runtime -d lib/ src/",
     "prepublish": "npm run compile",
-    "test": "mocha --require test/babelhook --reporter spec --compilers es6.js:babel/register",
-    "test-travis": "node --harmony istanbul cover _mocha --report lcovonly --hook-run-in-context -- --require test/babelhook --compilers es6.js:babel/register --reporter dot"
+    "test": "mocha --require test/babelhook --reporter spec --compilers es6.js:babel-register"
   },
   "version": "1.0.1"
 }
