@@ -51,6 +51,7 @@
   "description": "simple url manipulation library",
   "devDependencies": {
     "babel": "^6.3.13",
+    "babel-cli": "^6.3.17",
     "babel-core": "^6.3.21",
     "babel-register": "^6.3.13",
     "chai": "^3.4.1",
@@ -73,9 +74,9 @@
       "email": "pavel.dedkov@gmail.com"
     }
   ],
-  "repository" : {
-	"type" : "git",
-	"url" : "https://github.com/ryg9I/url-manipulate.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryg9I/url-manipulate.git"
   },
   "name": "url-manipulate",
   "optionalDependencies": {},
