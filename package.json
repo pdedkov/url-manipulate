@@ -85,5 +85,5 @@
     "test": "mocha --require test/babelhook --reporter spec --compilers js:babel-register",
     "test-travis": "istanbul cover _mocha --report lcovonly --hook-run-in-context -- --require test/babelhook --compilers js:babel-register --reporter dot"
   },
-  "version": "1.0.10"
+  "version": "1.0.11"
 }
