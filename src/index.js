@@ -62,7 +62,7 @@ UrlManipulate.prototype.isSameHost = function(url1, url2, cutWWW) {
  * @return {boolean} результат
  */
 UrlManipulate.prototype.isValid = function(uri) {
-	return validator.isURL(uri);
+	return validator.isURL(this.addHttp(uri));
 
 }
 
